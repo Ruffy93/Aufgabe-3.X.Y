@@ -13,6 +13,7 @@ class MultiToolApp:
         self.notebook = ttk.Notebook(self.root)
         self.notebook.pack(fill='both', expand=True)
 
+
         PDFViewerTab(self.notebook)
         BackupTab(self.notebook)
         OnboardingTab(self.notebook)
@@ -21,3 +22,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = MultiToolApp(root)
     root.mainloop()
+    
+input()
